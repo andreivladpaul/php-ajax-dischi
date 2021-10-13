@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
     <div id="root">
         <header class="header">
             <div class="logo__img">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Spotify_icon.png" alt="logo spotify">
             </div>
             <div class="selection">
-                <select name="selection__genre" id="selectionGenre">
-                    <option value="All">All</option>
-                    <option value="Rock">Rock</option>
-                    <option value="Pop">Pop</option>
-                    <option value="Jazz">Jazz</option>
-                    <option value="Metal">Metal</option>
+                <select name="genre" id="selectionGenre"
+                v-model="genre">
+                    <option value="All"> <selected>All</selected></option>
+                    <option v-for="(genre,index) in genres" :value="genre">{{genre}}</option>
+                    
                 </select> 
             </div>
         </header>
@@ -44,6 +45,8 @@
         </main>
     </div>
     
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
