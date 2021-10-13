@@ -27,18 +27,18 @@
         </header>
     
         <main class="main">
-            <div class="container clearfix">
-                <div class='card '>
+            <div  class="container clearfix">
+                <div class='card' v-for="(album, index) in songs" :key="index">
                     <div class='card__img'>
-                        <img src='' alt=' '>
+                        <img :src='album.poster' alt=' '>
                     </div>
                     <div class='card__info'>
                         <div class='card__title'>
-                            <h3> </h3>
+                            <h3>{{album.title}}</h3>
                         </div>
                         <div class='card__author'>
-                            <h4> </h4>
-                            <h4> </h4>
+                            <h4>{{album.author}}</h4>
+                            <h4>{{album.year}}</h4>
                         </div>
                     </div>
                 </div>
