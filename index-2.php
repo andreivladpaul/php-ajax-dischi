@@ -13,25 +13,15 @@
     <div id="root" class="outer-wrapper">
         <header>
             <div class="nav">
-                <img src="./img/spotify.png" alt="spotify-icon">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/571e5943-4616-4654-bf99-10b3c98f8686/d98301o-426f05ca-8fe5-4636-9009-db9dd1fca1f3.png" alt="spotify-icon">
                 <div>
                     <label for="genre"> Seleziona il tuo genere preferito</label>
                 <select @change="getGenre" v-model="selected" class="genre" name="genre" id="genre">
-                    <option value="All">
-                        All
-                    </option>
-                    <option value="Jazz">
-                        jazz
-                    </option>
-                    <option value="Metal">
-                        metal
-                    </option>
-                    <option value="Pop">
-                        pop
-                    </option>
-                    <option value="Rock">
-                        rock
-                    </option>
+                    <option value="All">All</option>
+                    <option value="Jazz">jazz</option>
+                    <option value="Metal">metal</option>
+                    <option value="Pop">pop</option>
+                    <option value="Rock">rock</option>
                 </select>
                 </div>
             </div>
